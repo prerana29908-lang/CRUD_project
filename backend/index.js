@@ -82,6 +82,7 @@ server.use(express.json());
 
 //here server routes are defined using the server.get() method. The first route is the root route ("/"), which sends a response of "Hello World!" when accessed. The second route is "/api/products", which sends a JSON response containing an array of product objects when accessed.
 server.get("/", (req, res) => {
+  console.log("Root route hit");
   res.send("Hello World!");
 });
 // server.get("/api/products", (request, response) => {
